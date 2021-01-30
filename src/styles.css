@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input {
+  padding: 1rem;
+  width: 80%;
+  border: solid 4px #059669;
+}
+
+.container {
+  text-align: center;
+  background-color: #d1fae5;
+}
+
+.text-font,
+h3 {
+  color: #047857;
+  font-family: "Indie Flower", cursive;
+}
+
+h3 {
+  padding-top: 4rem;
+}
+
+.Emoji {
+  background-image: url(./emoji.png);
+}
+
+#output {
+  color: #4f46e5;
+  padding-top: 1rem;
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+}
