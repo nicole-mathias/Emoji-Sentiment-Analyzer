@@ -4,11 +4,17 @@ import "./emo.png";
 
 //  step 4 is creating database dictionary
 const emojiDictionary = {
-  "👍": "thumbs up",
-  "😀": "happy",
-  "😶": "speechless",
-  "🙁": "sad",
-  "🍕": "pizza"
+  "👍": "Thumbs Up",
+  "😀": "Grinning Face",
+  "😶": "Speechless Face",
+  "🙁": "Sad Face",
+  "🤣": "Rolling on the Floor Laughing",
+  "😂": "Face with Tears of Joy",
+  "😋": "Face Savoring Food",
+  "🤫": "Shushing Face",
+  "😐": "Neutral Face",
+  "😏": " Smirking Face",
+  "🤩": "Star-Struck"
 };
 
 // // step 8, converting the object dictionary into an array,
@@ -65,10 +71,15 @@ export default function App() {
   }
 
   return (
-    <div className="container">
-      <h1 class="text-font">Emoji sentiment analyzer</h1>
+    <div>
+      <h1 class="header">🤩 Emoji sentiment analyzer 🤩</h1>
+
       {/* step 1 */}
-      <input onChange={emojiInputHandler} />
+      <h3>
+        Enter an Emoji :
+        <input onChange={emojiInputHandler} />
+      </h3>
+
       {/* step 7 */}
       <h2 id="output"> {meaning} </h2>
 
@@ -88,6 +99,10 @@ export default function App() {
           </span>
         );
       })}
+      <div class="footer">
+        Where words alone are not used to express feelings, there emoji's are
+        used.
+      </div>
     </div>
   );
 }
